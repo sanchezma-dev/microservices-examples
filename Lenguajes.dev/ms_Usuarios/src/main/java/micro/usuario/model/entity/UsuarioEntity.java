@@ -19,4 +19,5 @@ public class UsuarioEntity {
 	
 	/** Password del usuario */
 	private String pass;
+
 }
