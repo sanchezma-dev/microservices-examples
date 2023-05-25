@@ -16,6 +16,10 @@ public class UsuarioEntity {
 	/** Nombre único del usuario */
 	@Indexed(unique = true)
 	private String nombre;
+
+	/** Email único del usuario */
+	@Indexed(unique = true)
+	private String email;
 	
 	/** Password del usuario */
 	private String pass;
