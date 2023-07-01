@@ -19,4 +19,7 @@ public class RespuestaDTO {
 
 	/** Lista de errores */
 	private List<String> errores;
+
+	/** Lista UsuarioDTO */
+	private List<UsuarioDTO> listaUsuarioDto;
 }

@@ -29,4 +29,15 @@ public class UsuarioServiceImpl implements UsuarioService {
 	public UsuarioDTO saveUsuario(final UsuarioDTO usuario) {
 		return mapper.toDTO(repo.save(mapper.toEntity(usuario)));
 	}
+
+	@Override
+	public boolean existeUsuario(final String nombre) {
+		return repo.existsByNombre(nombre);
+	}
+
+	@Override
+	public void borrarUsuario(final String nombre) {
+		repo.deleteByNombre(nombre);
+	}
+
 }
